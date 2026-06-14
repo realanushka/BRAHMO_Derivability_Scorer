@@ -1,0 +1,28 @@
+# BRAHMO Derivability Scoring System — Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Web framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.32   # required for file uploads (POST /api/upload-nodes)
+
+# Database
+supabase==2.11.0
+
+# Environment variables
+python-dotenv==1.0.1
+
+# NLP — spaCy for NER and sentence segmentation
+spacy==3.8.4
+
+# ML — TF-IDF vectorizer and cosine similarity
+scikit-learn==1.6.1
+numpy==2.2.3
+
+# Data validation (included with FastAPI but pinned)
+pydantic==2.10.5
+
+# Testing
+pytest==8.3.4
+httpx==0.28.1
+pytest-asyncio==0.25.3

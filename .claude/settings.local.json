@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./venv/Scripts/python.exe -m py_compile app/services/scoring_service.py app/services/supabase_client.py app/models/schemas.py app/api/routers/nodes.py)",
+      "Bash(./venv/Scripts/python.exe -c \"from app.main import app; print\\('routes:', len\\(app.routes\\)\\); print\\('delete route:', any\\(getattr\\(r,'path',''\\)=='/api/nodes/recent-upload' for r in app.routes\\)\\)\")",
+      "Bash(npm run *)",
+      "Bash(./venv/Scripts/python.exe -c \"from app.main import app; print\\('delete-by-file route:', any\\(getattr\\(r,'path',''\\)=='/api/nodes/delete-by-file' for r in app.routes\\)\\)\")",
+      "Bash(./venv/Scripts/python.exe -m py_compile app/services/scoring_service.py app/services/supabase_client.py)",
+      "Bash(./venv/Scripts/python.exe *)"
+    ]
+  }
+}

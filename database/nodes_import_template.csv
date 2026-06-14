@@ -1,0 +1,3 @@
+id,org_id,type,title,content,importance,expected_derivability,expected_score_range,department,tokens_full,tokens_delta
+NEW-01,supra,FACT,What is Hypertension,"Hypertension, also known as high blood pressure, is a chronic condition in which blood pressure in the arteries is persistently elevated. Normal is below 120/80 mmHg.",0.30,DERIVABLE,0.88-0.95,medicine,55,0
+NEW-02,supra,DECISION,Supra Cardiology BP Protocol,"Supra Cardiology targets BP < 130/80 for diabetic patients. First-line: Telmisartan 40mg. Decision by Dr. Anand, March 2026.",0.85,NON_DERIVABLE,0.02-0.10,cardiology,60,
